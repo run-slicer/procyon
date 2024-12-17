@@ -1,0 +1,1062 @@
+.inner public static interface abstract {
+    name: OfField,
+    inner: java/lang/invoke/TypeDescriptor$OfField,
+    outer: java/lang/invoke/TypeDescriptor
+}
+.sourcefile "Class.java"
+.signature "<T:Ljava/lang/Object;>Ljava/lang/Object;Ljava/io/Serializable;Ljava/lang/reflect/GenericDeclaration;Ljava/lang/reflect/Type;Ljava/lang/reflect/AnnotatedElement;Ljava/lang/invoke/TypeDescriptor$OfField<Ljava/lang/Class<*>;>;Ljava/lang/constant/Constable;"
+.super java/lang/Object
+.implements java/io/Serializable
+.implements java/lang/reflect/GenericDeclaration
+.implements java/lang/reflect/Type
+.implements java/lang/reflect/AnnotatedElement
+.implements java/lang/invoke/TypeDescriptor$OfField
+.implements java/lang/constant/Constable
+.class public final super java/lang/Class {
+
+
+    .method public <init> ()V {
+        parameters: { this },
+        code: {
+        A: 
+            line 48
+            aload this
+            invokespecial java/lang/Object.<init> ()V
+            return 
+        B: 
+        }
+    }
+
+    .signature "(Ljava/lang/String;)Ljava/lang/Class<*>;"
+    .method public static forName (Ljava/lang/String;)Ljava/lang/Class; {
+        parameters: { p0 },
+        code: {
+        A: 
+            line 50
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class<*>;"
+    .method public static forName (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class; {
+        parameters: { p0, p1, p2 },
+        code: {
+        A: 
+            line 54
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "(Ljava/lang/Module;Ljava/lang/String;)Ljava/lang/Class<*>;"
+    .method public static forName (Ljava/lang/Module;Ljava/lang/String;)Ljava/lang/Class; {
+        parameters: { p0, p1 },
+        code: {
+        A: 
+            line 58
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public toString ()Ljava/lang/String; {
+        parameters: { this },
+        code: {
+        A: 
+            line 62
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public toGenericString ()Ljava/lang/String; {
+        parameters: { this },
+        code: {
+        A: 
+            line 66
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()TT;"
+    .method public newInstance ()Ljava/lang/Object; {
+        parameters: { this },
+        code: {
+        A: 
+            line 70
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public native isInstance (Ljava/lang/Object;)Z {
+        parameters: { this, p1 }
+    }
+
+    .signature "(Ljava/lang/Class<*>;)Z"
+    .method public native isAssignableFrom (Ljava/lang/Class;)Z {
+        parameters: { this, p1 }
+    }
+
+    .method public native isInterface ()Z {
+        parameters: { this }
+    }
+
+    .method public native isArray ()Z {
+        parameters: { this }
+    }
+
+    .method public native isPrimitive ()Z {
+        parameters: { this }
+    }
+
+    .method public isAnnotation ()Z {
+        parameters: { this },
+        code: {
+        A: 
+            line 84
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public isSynthetic ()Z {
+        parameters: { this },
+        code: {
+        A: 
+            line 88
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getName ()Ljava/lang/String; {
+        parameters: { this },
+        code: {
+        A: 
+            line 92
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getClassLoader ()Ljava/lang/ClassLoader; {
+        parameters: { this },
+        code: {
+        A: 
+            line 96
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getModule ()Ljava/lang/Module; {
+        parameters: { this },
+        code: {
+        A: 
+            line 100
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()[Ljava/lang/reflect/TypeVariable<Ljava/lang/Class<TT;>;>;"
+    .method public getTypeParameters ()[Ljava/lang/reflect/TypeVariable; {
+        parameters: { this },
+        code: {
+        A: 
+            line 104
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()Ljava/lang/Class<-TT;>;"
+    .method public native getSuperclass ()Ljava/lang/Class; {
+        parameters: { this }
+    }
+
+    .method public getGenericSuperclass ()Ljava/lang/reflect/Type; {
+        parameters: { this },
+        code: {
+        A: 
+            line 110
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getPackage ()Ljava/lang/Package; {
+        parameters: { this },
+        code: {
+        A: 
+            line 114
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getPackageName ()Ljava/lang/String; {
+        parameters: { this },
+        code: {
+        A: 
+            line 118
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()[Ljava/lang/Class<*>;"
+    .method public getInterfaces ()[Ljava/lang/Class; {
+        parameters: { this },
+        code: {
+        A: 
+            line 122
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getGenericInterfaces ()[Ljava/lang/reflect/Type; {
+        parameters: { this },
+        code: {
+        A: 
+            line 126
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()Ljava/lang/Class<*>;"
+    .method public getComponentType ()Ljava/lang/Class; {
+        parameters: { this },
+        code: {
+        A: 
+            line 130
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public native getModifiers ()I {
+        parameters: { this }
+    }
+
+    .signature "()Ljava/util/Set<Ljava/lang/reflect/AccessFlag;>;"
+    .method public accessFlags ()Ljava/util/Set; {
+        parameters: { this },
+        code: {
+        A: 
+            line 136
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public native getSigners ()[Ljava/lang/Object; {
+        parameters: { this }
+    }
+
+    .method public getEnclosingMethod ()Ljava/lang/reflect/Method; {
+        parameters: { this },
+        code: {
+        A: 
+            line 142
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()Ljava/lang/reflect/Constructor<*>;"
+    .method public getEnclosingConstructor ()Ljava/lang/reflect/Constructor; {
+        parameters: { this },
+        code: {
+        A: 
+            line 146
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()Ljava/lang/Class<*>;"
+    .method public getDeclaringClass ()Ljava/lang/Class; {
+        parameters: { this },
+        code: {
+        A: 
+            line 150
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()Ljava/lang/Class<*>;"
+    .method public getEnclosingClass ()Ljava/lang/Class; {
+        parameters: { this },
+        code: {
+        A: 
+            line 154
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getSimpleName ()Ljava/lang/String; {
+        parameters: { this },
+        code: {
+        A: 
+            line 158
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getTypeName ()Ljava/lang/String; {
+        parameters: { this },
+        code: {
+        A: 
+            line 162
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getCanonicalName ()Ljava/lang/String; {
+        parameters: { this },
+        code: {
+        A: 
+            line 166
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public isUnnamedClass ()Z {
+        parameters: { this },
+        code: {
+        A: 
+            line 170
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public isAnonymousClass ()Z {
+        parameters: { this },
+        code: {
+        A: 
+            line 174
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public isLocalClass ()Z {
+        parameters: { this },
+        code: {
+        A: 
+            line 178
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public isMemberClass ()Z {
+        parameters: { this },
+        code: {
+        A: 
+            line 182
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()[Ljava/lang/Class<*>;"
+    .method public getClasses ()[Ljava/lang/Class; {
+        parameters: { this },
+        code: {
+        A: 
+            line 186
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getFields ()[Ljava/lang/reflect/Field; {
+        parameters: { this },
+        code: {
+        A: 
+            line 190
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getMethods ()[Ljava/lang/reflect/Method; {
+        parameters: { this },
+        code: {
+        A: 
+            line 194
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()[Ljava/lang/reflect/Constructor<*>;"
+    .method public getConstructors ()[Ljava/lang/reflect/Constructor; {
+        parameters: { this },
+        code: {
+        A: 
+            line 198
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getField (Ljava/lang/String;)Ljava/lang/reflect/Field; {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 202
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "(Ljava/lang/String;[Ljava/lang/Class<*>;)Ljava/lang/reflect/Method;"
+    .method public varargs getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method; {
+        parameters: { this, p1, p2 },
+        code: {
+        A: 
+            line 206
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "([Ljava/lang/Class<*>;)Ljava/lang/reflect/Constructor<TT;>;"
+    .method public varargs getConstructor ([Ljava/lang/Class;)Ljava/lang/reflect/Constructor; {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 210
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()[Ljava/lang/Class<*>;"
+    .method public getDeclaredClasses ()[Ljava/lang/Class; {
+        parameters: { this },
+        code: {
+        A: 
+            line 214
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getDeclaredFields ()[Ljava/lang/reflect/Field; {
+        parameters: { this },
+        code: {
+        A: 
+            line 218
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getRecordComponents ()[Ljava/lang/reflect/RecordComponent; {
+        parameters: { this },
+        code: {
+        A: 
+            line 222
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getDeclaredMethods ()[Ljava/lang/reflect/Method; {
+        parameters: { this },
+        code: {
+        A: 
+            line 226
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()[Ljava/lang/reflect/Constructor<*>;"
+    .method public getDeclaredConstructors ()[Ljava/lang/reflect/Constructor; {
+        parameters: { this },
+        code: {
+        A: 
+            line 230
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getDeclaredField (Ljava/lang/String;)Ljava/lang/reflect/Field; {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 234
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "(Ljava/lang/String;[Ljava/lang/Class<*>;)Ljava/lang/reflect/Method;"
+    .method public varargs getDeclaredMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method; {
+        parameters: { this, p1, p2 },
+        code: {
+        A: 
+            line 238
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "([Ljava/lang/Class<*>;)Ljava/lang/reflect/Constructor<TT;>;"
+    .method public varargs getDeclaredConstructor ([Ljava/lang/Class;)Ljava/lang/reflect/Constructor; {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 242
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getResourceAsStream (Ljava/lang/String;)Ljava/io/InputStream; {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 246
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getResource (Ljava/lang/String;)Ljava/net/URL; {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 250
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getProtectionDomain ()Ljava/security/ProtectionDomain; {
+        parameters: { this },
+        code: {
+        A: 
+            line 254
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public desiredAssertionStatus ()Z {
+        parameters: { this },
+        code: {
+        A: 
+            line 258
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public isEnum ()Z {
+        parameters: { this },
+        code: {
+        A: 
+            line 262
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public isRecord ()Z {
+        parameters: { this },
+        code: {
+        A: 
+            line 266
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()[TT;"
+    .method public getEnumConstants ()[Ljava/lang/Object; {
+        parameters: { this },
+        code: {
+        A: 
+            line 270
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "(Ljava/lang/Object;)TT;"
+    .method public cast (Ljava/lang/Object;)Ljava/lang/Object; {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 274
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "<U:Ljava/lang/Object;>(Ljava/lang/Class<TU;>;)Ljava/lang/Class<+TU;>;"
+    .method public asSubclass (Ljava/lang/Class;)Ljava/lang/Class; {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 278
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "<A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)TA;"
+    .method public getAnnotation (Ljava/lang/Class;)Ljava/lang/annotation/Annotation; {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 282
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "(Ljava/lang/Class<+Ljava/lang/annotation/Annotation;>;)Z"
+    .method public isAnnotationPresent (Ljava/lang/Class;)Z {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 286
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "<A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)[TA;"
+    .method public getAnnotationsByType (Ljava/lang/Class;)[Ljava/lang/annotation/Annotation; {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 290
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getAnnotations ()[Ljava/lang/annotation/Annotation; {
+        parameters: { this },
+        code: {
+        A: 
+            line 294
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "<A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)TA;"
+    .method public getDeclaredAnnotation (Ljava/lang/Class;)Ljava/lang/annotation/Annotation; {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 298
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "<A::Ljava/lang/annotation/Annotation;>(Ljava/lang/Class<TA;>;)[TA;"
+    .method public getDeclaredAnnotationsByType (Ljava/lang/Class;)[Ljava/lang/annotation/Annotation; {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 302
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getDeclaredAnnotations ()[Ljava/lang/annotation/Annotation; {
+        parameters: { this },
+        code: {
+        A: 
+            line 306
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getAnnotatedSuperclass ()Ljava/lang/reflect/AnnotatedType; {
+        parameters: { this },
+        code: {
+        A: 
+            line 310
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public getAnnotatedInterfaces ()[Ljava/lang/reflect/AnnotatedType; {
+        parameters: { this },
+        code: {
+        A: 
+            line 314
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()Ljava/lang/Class<*>;"
+    .method public getNestHost ()Ljava/lang/Class; {
+        parameters: { this },
+        code: {
+        A: 
+            line 318
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "(Ljava/lang/Class<*>;)Z"
+    .method public isNestmateOf (Ljava/lang/Class;)Z {
+        parameters: { this, p1 },
+        code: {
+        A: 
+            line 322
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()[Ljava/lang/Class<*>;"
+    .method public getNestMembers ()[Ljava/lang/Class; {
+        parameters: { this },
+        code: {
+        A: 
+            line 326
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public descriptorString ()Ljava/lang/String; {
+        parameters: { this },
+        code: {
+        A: 
+            line 330
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()Ljava/lang/Class<*>;"
+    .method public componentType ()Ljava/lang/Class; {
+        parameters: { this },
+        code: {
+        A: 
+            line 334
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()Ljava/lang/Class<*>;"
+    .method public arrayType ()Ljava/lang/Class; {
+        parameters: { this },
+        code: {
+        A: 
+            line 338
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .signature "()Ljava/util/Optional<Ljava/lang/constant/ClassDesc;>;"
+    .method public describeConstable ()Ljava/util/Optional; {
+        parameters: { this },
+        code: {
+        A: 
+            line 342
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public native isHidden ()Z {
+        parameters: { this }
+    }
+
+    .signature "()[Ljava/lang/Class<*>;"
+    .method public getPermittedSubclasses ()[Ljava/lang/Class; {
+        parameters: { this },
+        code: {
+        A: 
+            line 348
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public isSealed ()Z {
+        parameters: { this },
+        code: {
+        A: 
+            line 352
+            new java/lang/UnsupportedOperationException
+            dup 
+            invokespecial java/lang/UnsupportedOperationException.<init> ()V
+            athrow 
+        B: 
+        }
+    }
+
+    .method public bridge synthetic arrayType ()Ljava/lang/invoke/TypeDescriptor$OfField; {
+        parameters: { this },
+        code: {
+        A: 
+            line 48
+            aload this
+            invokevirtual java/lang/Class.arrayType ()Ljava/lang/Class;
+            areturn 
+        B: 
+        }
+    }
+
+    .method public bridge synthetic componentType ()Ljava/lang/invoke/TypeDescriptor$OfField; {
+        parameters: { this },
+        code: {
+        A: 
+            line 48
+            aload this
+            invokevirtual java/lang/Class.componentType ()Ljava/lang/Class;
+            areturn 
+        B: 
+        }
+    }
+
+}

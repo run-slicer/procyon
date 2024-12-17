@@ -1,0 +1,8 @@
+package run.slicer.procyon.teavm;
+
+import java.util.Base64;
+
+class BuildConstants {
+    static final byte[] OBJECT_CLASS = Base64.getDecoder().decode("{{ java_lang_Object }}");
+    static final byte[] CLASS_CLASS = Base64.getDecoder().decode("{{ java_lang_Class }}");
+}
