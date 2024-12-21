@@ -28,7 +28,7 @@ public final class MethodDelegates {
         return true;
     }
 
-    public static void com_strobel_decompiler_languages_java_ast_Keys_LTclinitGT() {
+    public static void com_strobel_decompiler_languages_java_ast_Keys__clinit_() {
         try {
             Keys.ALL_KEYS.size(); // initialize class
         } catch (Throwable ignored) {

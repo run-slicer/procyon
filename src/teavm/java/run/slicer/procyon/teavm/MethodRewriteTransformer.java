@@ -6,7 +6,7 @@ import org.teavm.model.instructions.ExitInstruction;
 import org.teavm.model.instructions.InvocationType;
 import org.teavm.model.instructions.InvokeInstruction;
 
-public class MethodStubTransformer implements ClassHolderTransformer {
+public class MethodRewriteTransformer implements ClassHolderTransformer {
     @Override
     public void transformClass(ClassHolder cls, ClassHolderTransformerContext context) {
         switch (cls.getName()) {
@@ -16,7 +16,7 @@ public class MethodStubTransformer implements ClassHolderTransformer {
                         cls.getMethod(new MethodDescriptor("ensureClassInitialized", Class.class, void.class)),
                         new MethodReference(
                                 "run.slicer.procyon.teavm.MethodDelegates",
-                                "com_strobel_decompiler_languages_java_ast_Keys_LTclinitGT",
+                                "com_strobel_decompiler_languages_java_ast_Keys__clinit_",
                                 ValueType.VOID
                         )
                 );
