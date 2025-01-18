@@ -10,6 +10,7 @@ import org.teavm.interop.Async;
 import org.teavm.interop.AsyncCallback;
 import org.teavm.jso.JSBody;
 import org.teavm.jso.JSByRef;
+import org.teavm.jso.JSExceptions;
 import org.teavm.jso.JSExport;
 import org.teavm.jso.core.JSObjects;
 import org.teavm.jso.core.JSPromise;
@@ -45,7 +46,7 @@ public class Main {
 
                     resolve.accept(JSString.valueOf(writer.toString()));
                 } catch (Throwable e) {
-                    reject.accept(e);
+                    reject.accept(JSExceptions.getJSException(e));
                 }
             }).start();
         });
