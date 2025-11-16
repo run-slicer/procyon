@@ -4,7 +4,7 @@ plugins {
     alias(libs.plugins.blossom)
 }
 
-val thisVersion = "0.1.1"
+val thisVersion = "0.1.2"
 
 group = "run.slicer"
 version = "$thisVersion-${libs.versions.procyon.get()}"
@@ -12,6 +12,8 @@ description = "A JavaScript port of the Procyon decompiler."
 
 repositories {
     mavenCentral()
+    mavenLocal()
+    maven("https://teavm.org/maven/repository")
 }
 
 dependencies {
@@ -23,19 +25,36 @@ java.toolchain {
     languageVersion = JavaLanguageVersion.of(21)
 }
 
-teavm.js {
+/*teavm.js {
     mainClass = "run.slicer.procyon.Main"
     moduleType = org.teavm.gradle.api.JSModuleType.ES2015
     // obfuscated = false
     // optimization = org.teavm.gradle.api.OptimizationLevel.NONE
+}*/
+
+teavm.wasmGC {
+    mainClass = "run.slicer.procyon.Main"
+    modularRuntime = true
+    /*obfuscated = false
+    optimization = org.teavm.gradle.api.OptimizationLevel.NONE
+    disassembly = true*/
 }
+
+/*tasks.disasmWasmGC {
+    html = false
+}*/
 
 tasks {
     register<Copy>("copyDist") {
         group = "build"
 
-        from("README.md", "LICENSE", "LICENSE-PROCYON", generateJavaScript, "procyon.d.ts")
+        from(
+            "README.md", "LICENSE", "LICENSE-PROCYON", "procyon.js", "procyon.d.ts",
+            generateWasmGC, copyWasmGCRuntime
+        )
         into("dist")
+
+        duplicatesStrategy = DuplicatesStrategy.INCLUDE
 
         doLast {
             file("dist/package.json").writeText(
@@ -62,6 +81,10 @@ tasks {
 
     build {
         dependsOn("copyDist")
+    }
+
+    clean {
+        delete("dist")
     }
 }
 

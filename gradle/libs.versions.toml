@@ -1,6 +1,6 @@
 [versions]
 procyon = "0.6.0"
-teavm = "0.11.0"
+teavm = "0.14.0-SNAPSHOT"
 
 [libraries]
 procyon-compilertools = { group = "org.bitbucket.mstrobel", name = "procyon-compilertools", version.ref = "procyon" }

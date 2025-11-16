@@ -6,11 +6,8 @@ import com.strobel.assembler.metadata.TypeReference;
 import com.strobel.decompiler.DecompilationOptions;
 import com.strobel.decompiler.DecompilerSettings;
 import com.strobel.decompiler.PlainTextOutput;
-import org.teavm.interop.Async;
-import org.teavm.interop.AsyncCallback;
 import org.teavm.jso.JSBody;
 import org.teavm.jso.JSByRef;
-import org.teavm.jso.JSExceptions;
 import org.teavm.jso.JSExport;
 import org.teavm.jso.core.JSObjects;
 import org.teavm.jso.core.JSPromise;
@@ -28,45 +25,29 @@ public class Main {
     }
 
     private static JSPromise<JSString> decompile0(String name, Options options) {
-        return new JSPromise<>((resolve, reject) -> {
-            new Thread(() -> {
-                try {
-                    final ITypeLoader loader = new TypeLoaderImpl(name0 -> source0(options, name0));
-                    final DecompilerSettings settings = ProcyonOptions.toProcyonWithDefaults(options.rawOptions());
-                    settings.setTypeLoader(loader);
+        return JSPromise.callAsync(() -> {
+            final ITypeLoader loader = new TypeLoaderImpl(name0 -> source0(options, name0));
+            final DecompilerSettings settings = ProcyonOptions.toProcyonWithDefaults(options.rawOptions());
+            settings.setTypeLoader(loader);
 
-                    final var system = new MetadataSystem(loader);
-                    final TypeReference ref = system.lookupType(name);
+            final var system = new MetadataSystem(loader);
+            final TypeReference ref = system.lookupType(name);
 
-                    final var procyonOptions = new DecompilationOptions();
-                    procyonOptions.setSettings(settings);
+            final var procyonOptions = new DecompilationOptions();
+            procyonOptions.setSettings(settings);
 
-                    final var writer = new StringWriter();
-                    settings.getLanguage().decompileType(ref.resolve(), new PlainTextOutput(writer), procyonOptions);
+            final var writer = new StringWriter();
+            settings.getLanguage().decompileType(ref.resolve(), new PlainTextOutput(writer), procyonOptions);
 
-                    resolve.accept(JSString.valueOf(writer.toString()));
-                } catch (Throwable e) {
-                    reject.accept(JSExceptions.getJSException(e));
-                }
-            }).start();
+            return JSString.valueOf(writer.toString());
         });
     }
 
-    @Async
-    private static native byte[] source0(Options options, String name);
-
-    private static void source0(Options options, String name, AsyncCallback<byte[]> callback) {
-        options.source(name)
-                .then(b -> {
-                    callback.complete(b == null || JSObjects.isUndefined(b) ? null : unwrapByteArray(b));
-                    return null;
-                })
-                .catchError(err -> {
-                    callback.error(new Exception(err.toString()));
-                    return null;
-                });
+    private static byte[] source0(Options options, String name) {
+        final Uint8Array b = options.source(name).await();
+        return b == null || JSObjects.isUndefined(b) ? null : unwrapByteArray(b);
     }
 
     @JSBody(params = {"data"}, script = "return data;")
-    private static native @JSByRef byte[] unwrapByteArray(Uint8Array data);
+    private static native @JSByRef(optional = true) byte[] unwrapByteArray(Uint8Array data);
 }
